@@ -17,7 +17,7 @@ pub struct Item<'a, 'b: 'a> {
 /// A handle, identifying a socket in a set.
 #[derive(Debug, PartialEq, Eq, PartialOrd, Ord, Clone, Copy)]
 pub struct Handle {
-    index: usize
+    pub index: usize
 }
 
 /// An extensible set of sockets, with stable numeric identifiers.
